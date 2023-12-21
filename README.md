@@ -9,4 +9,4 @@ Por lo cual no hay mucho que mencionar mas que los updates realizados antes de c
 - Primero quiero aclarar que olvide hacer el commit y el push de la primer parte del proyecto.
 - La sección de proyectos quedo terminada.
 - Seccion de habilidades terminada
-  
+- Ya, teerminado, no se que mas agregar en este caso
