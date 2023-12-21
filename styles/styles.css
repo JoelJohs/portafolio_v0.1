@@ -212,8 +212,9 @@ ul {
   padding: 2rem;
 }
 
-.cabezera-proyectos {
-  margin: 1rem auto;
+.cabezera-proyectos,
+.cabezera-techab {
+  margin: 1rem auto 2rem;
   text-align: center;
 }
 
@@ -222,13 +223,14 @@ ul {
   border-radius: 2rem;
   width: 95%;
   padding: 2rem;
+  background-color: var(--primary-200);
 }
 
 .proyectos-realizados {
   display: flex;
   flex-direction: column;
   background-color: var(--bg-200);
-  margin: 1rem;
+  margin: 2rem 0;
   text-align: center;
   border-radius: 1rem;
 }
@@ -246,7 +248,8 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .cabezera-proyectos {
+  .cabezera-proyectos,
+  .cabezera-techab {
     border-bottom: 3px solid var(--primary-300);
   }
   .proyectos-grid {
@@ -255,5 +258,50 @@ ul {
   }
   .nombre-proyecto {
     font-size: 2rem;
+  }
+
+  .proyectos-realizados {
+    margin: 0 2rem;
+  }
+}
+
+/** TECNOLOGIAS Y HABILIDADES **/
+
+.techab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.habilidad-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--primary-300);
+  border-radius: 2rem;
+  width: 95%;
+  background-color: var(--primary-200);
+}
+
+.habilidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.habilidad__logo {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .habilidad-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
   }
 }
