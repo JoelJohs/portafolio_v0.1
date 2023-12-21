@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio v0.1 Joel Johs</title>
+    <meta
+      name="description"
+      content="Primer version de portafolio empleando hasta el momento HTML5 y CSS3"
+    />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <!-- FUENTES INICIO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FUENTES FIN-->
+
+    <!-- ESTILOS Y PRELOAD INICIO-->
+    <link rel="preload" href="styles/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="styles/styles.css" as="style" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- ESTILOS Y PRELOAD FIN-->
+  </head>
+  <body>
+    <!-- NAVBAR INICIO-->
+    <div class="contenedor-navbar">
+      <h1>
+        <a href="index.html" class="logo">Joel Johs</a>
+      </h1>
+      <nav id="navbar" class="navbar">
+        <ul class="lista-enlaces">
+          <li>
+            <a href="#welcome-section" class="enlace">Sobre mi</a>
+          </li>
+          <li>
+            <a href="#projects" class="enlace">Proyectos</a>
+          </li>
+          <li>
+            <a href="#tec-hab" class="enlace">Tecnologias y habilidades</a>
+          </li>
+          <li>
+            <a href="#contact" class="enlace">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- NAVBAR FIN-->
+
+    <!-- WELCOME SECTION INICIO-->
+    <section id="welcome-section" class="welcome-section">
+      <div class="ws-texto">
+        <h1 class="ws-texto__titulo">Hola, soy Joel Johs</h1>
+        <p class="ws-texto__subtitulo">Desarrollador web en proceso</p>
+        <p class="ws-texto__descripcion">
+          Soy un desarrollador web en proceso, con conocimientos en HTML5 y
+          CSS3.<br />
+          Actualmente estoy aprendiendo JavaScript y PHP.
+        </p>
+        <div>
+          <a href="#projects" class="enlace-boton">
+            <input
+              type="submit"
+              value="Observa mi progreso"
+              class="boton ws-boton"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="ws-imagen">
+        <figure>
+          <img src="img/se_adapta.jpg" alt="Se Adapta" loading="lazy" />
+          <figcaption>
+            Por motivos que desconozco, no tengo foto formal
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <!-- WELCOME SECTION FIN-->
+
+    <!-- PROJECTS INICIO-->
+    <section id="projects" class="proyectos">
+      <h2 class="cabezera-proyectos">Estos son algunos de mis proyectos</h2>
+      <div class="proyectos-grid">
+        <div class="proyectos-realizados">
+          <a href="https://dazzling-pasca-16502e.netlify.app/" target="_blank"
+            ><img src="img/PrimerPractica.png" alt="Primer Practica"
+          /></a>
+          <h3 class="nombre-proyecto">Primer Practica</h3>
+        </div>
+        <div class="proyectos-realizados">
+          <a href="https://prototipo-tienda-jojohs.netlify.app/" target="_blank"
+            ><img src="img/Store.png" alt="Prototipo de tienda"
+          /></a>
+          <h3 class="nombre-proyecto">prototipo de tienda</h3>
+        </div>
+        <div class="proyectos-realizados">
+          <a href="https://darling-malabi-69099d.netlify.app/" target="_blank"
+            ><img src="img/BlogdeCafe.png" alt="Blog de Cafe"
+          /></a>
+          <h3 class="nombre-proyecto">BlogdeCafe</h3>
+        </div>
+      </div>
+      <p class="proyectos-piepagina">
+        Esta seccion esta en constante crecimiento
+      </p>
+    </section>
+    <!-- PROJECTS FIN-->
+  </body>
+</html>

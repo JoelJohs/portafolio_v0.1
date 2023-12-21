@@ -1,0 +1,259 @@
+:root {
+  /** COLORES **/
+
+  --primary-100: #3d85c6;
+  --primary-200: #75b4f9;
+  --primary-300: #dfffff;
+  --accent-100: #ff5733;
+  --accent-200: #fff3bf;
+  --text-100: #ffffff;
+  --text-200: #e0e0e0;
+  --bg-100: #182138;
+  --bg-200: #283048;
+  --bg-300: #414862;
+
+  /** FONTS **/
+  --primary-font: "Roboto", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+
+  /** GRADIENTS **/
+  --bg-gradient: linear-gradient(360deg, var(--bg-100) 0%, var(--bg-300) 100%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  background-color: var(--bg-100);
+  color: var(--text-100);
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/** BOTON **/
+.boton {
+  background-color: var(--bg-100);
+  color: var(--text-100);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 0.1px solid var(--primary-300);
+  cursor: pointer;
+}
+
+/** BARRA DE NAVEGACION **/
+
+.contenedor-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--bg-200);
+  border-bottom: 0.5px solid var(--accent-200);
+  z-index: 100;
+}
+.contenedor-navbar h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-100);
+}
+.navbar {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: var(--bg-200);
+  justify-content: center;
+}
+
+.contenedor-navbar a {
+  color: var(--text-100);
+}
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar ul li {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor-navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 2rem;
+    padding: 2rem 0;
+  }
+
+  .navbar ul li {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}
+
+/** WELCOME-SECTION **/
+
+.welcome-section {
+  background: var(--bg-gradient);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 15rem 0 2rem;
+  padding: 5rem 2rem 2rem;
+}
+
+.ws-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ws-imagen img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.ws-texto__descripcion {
+  font-weight: 400;
+  margin: 3rem 0;
+}
+
+.ws-imagen figcaption {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .welcome-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding: 10rem 2rem 5rem;
+  }
+}
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.cabezera-proyectos {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.proyectos-grid {
+  border: 3px solid var(--primary-300);
+  border-radius: 2rem;
+  width: 95%;
+  padding: 2rem;
+}
+
+.proyectos-realizados {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-200);
+  margin: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.proyectos-realizados img {
+  max-width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.nombre-proyecto {
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .cabezera-proyectos {
+    border-bottom: 3px solid var(--primary-300);
+  }
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .nombre-proyecto {
+    font-size: 2rem;
+  }
+}
